@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lion's Head Mumurwi Resort | Escape to Nature Near Harare</title>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fontsource/playfair-display@5.0.8/400.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fontsource/playfair-display@5.0.8/700.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.20/300.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.20/400.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.20/500.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.20/600.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+</head>
+<body>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navigation -->
+    <nav class="nav-bar" id="navbar">
+        <a href="#" class="nav-logo">
+            <img src="img/logo.png" alt="Lion's Head Mumurwi Resort Logo">
+            <div>
+                <span style="font-size:0.75rem; letter-spacing:2px; text-transform:uppercase; font-weight:600;">Lion's Head</span>
+                <span style="display:block; font-size:1.1rem; font-family:'Playfair Display',serif; font-weight:700;">Mumurwi</span>
+            </div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#activities">Activities</a></li>
+            <li><a href="#accommodation">Stay</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact" class="nav-cta">Book Now</a></li>
+        </ul>
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Open menu">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="3" y1="6" x2="21" y2="6"/>
+                <line x1="3" y1="12" x2="21" y2="12"/>
+                <line x1="3" y1="18" x2="21" y2="18"/>
+            </svg>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-close" onclick="toggleMobileMenu()" aria-label="Close menu"></button>
+        <a href="#about" onclick="toggleMobileMenu()">About</a>
+        <a href="#activities" onclick="toggleMobileMenu()">Activities</a>
+        <a href="#accommodation" onclick="toggleMobileMenu()">Accommodation</a>
+        <a href="#gallery" onclick="toggleMobileMenu()">Gallery</a>
+        <a href="#contact" onclick="toggleMobileMenu()">Contact</a>
+        <a href="#contact" class="btn-primary" onclick="toggleMobileMenu()">Book Now</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="parallax-bg" id="heroBg" style="background-image: url('img/herobackground.jpg');"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-animate" style="margin-bottom:20px;">
+                <img src="img/logo.png" alt="Lion's Head Mumurwi Resort Logo" class="hero-logo" style="margin:0 auto; display:block;">
+            </div>
+            <h1 class="hero-title hero-animate hero-animate-delay-1">
+                Escape to Nature.<br>Discover <span style="color:var(--orange-primary);">Lion's Head.</span>
+            </h1>
+            <p class="hero-subtitle hero-animate hero-animate-delay-2" style="margin:24px auto 40px;">
+                A scenic retreat just 62km outside Harare where adventure, relaxation, and breathtaking views meet.
+            </p>
+            <div class="hero-animate hero-animate-delay-3" style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+                <a href="#contact" class="btn-primary">Book Your Visit</a>
+                <a href="#activities" class="btn-secondary">Explore Activities</a>
+            </div>
+        </div>
+        <!-- Scroll indicator -->
+        <div style="position:absolute; bottom:40px; left:50%; transform:translateX(-50%); z-index:2; animation:float 2s ease-in-out infinite;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2">
+                <polyline points="6,9 12,15 18,9"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section-padding" id="about" style="background:var(--warm-white);">
+        <div class="about-grid">
+            <div class="about-image-wrapper animate-on-scroll from-left">
+                <img src="img/mountains1.jpg" alt="Hiking at Lion's Head">
+                <div class="about-image-overlay">
+                    <p style="font-size:0.85rem; opacity:0.8;">62km from Harare</p>
+                    <p style="font-size:1.2rem; font-weight:600; font-family:'Playfair Display',serif;">Shamva District</p>
+                </div>
+            </div>
+            <div class="animate-on-scroll from-right">
+                <span style="color:var(--orange-primary); font-weight:600; font-size:0.85rem; letter-spacing:2px; text-transform:uppercase;">Our Story</span>
+                <h2 class="section-title" style="margin-top:12px; color: var(--orange-primary);">A Hidden Gem Where<br>Mountain Meets Serenity</h2>
+                <div class="section-divider"></div>
+                <p style="color:#555; line-height:1.8; margin-bottom:20px;">
+                    Nestled in the heart of Mashonaland Central, Lion's Head Mumurwi Resort is more than a destination — it's an experience that reconnects you with the raw beauty of Zimbabwe's wilderness.
+                </p>
+                <p style="color:#555; line-height:1.8; margin-bottom:20px;">
+                    Named after the majestic Lion's Head mountain — a striking rock formation that watches over the landscape — our resort sits beside a scenic dam surrounded by ancient rock art, rolling hills, and the timeless beauty of the African bushveld.
+                </p>
+                <p style="color:#555; line-height:1.8; margin-bottom:32px;">
+                    Whether you're seeking a peaceful weekend escape, an adventure-filled family outing, or a unique corporate retreat, Lion's Head offers the perfect blend of nature, culture, and comfort.
+                </p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number counter" data-target="62">0</div>
+                        <div class="stat-label">km from Harare</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number counter" data-target="15">0</div>
+                        <div class="stat-label">+ Activities</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number counter" data-target="1000">0</div>
+                        <div class="stat-label">+ Happy Visitors</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section class="section-padding" id="activities" style="background:var(--charcoal);">
+        <div class="parallax-bg" style="background-image: url('img/herobackground.jpg'); opacity:0.15;"></div>
+        <div style="position:relative; z-index:1;">
+        <div style="text-align:center; margin-bottom:60px;">
+            <span style="color:var(--orange-primary); font-weight:600; font-size:0.85rem; letter-spacing:2px; text-transform:uppercase;">Adventures Await</span>
+            <h2 class="section-title" style="margin-top:12px;">Experiences at Your Pace</h2>
+            <div class="section-divider" style="margin:20px auto;"></div>
+            <p class="section-subtitle" style="margin:0 auto;">From heart-pumping adventures to peaceful nature walks, discover the perfect activity for your group.</p>
+        </div>
+        <div class="activities-grid">
+            <div class="activity-card animate-on-scroll" style="transition-delay:0.1s;">
+                <img src="https://image.qwenlm.ai/public_source/e8238fe2-42c8-42d4-871c-18adfd888b13/1255f6855-3624-4acb-a471-b8a15a38db6e.png" alt="Guided Hiking">
+                <div class="activity-card-overlay">
+                    <div class="activity-card-icon"></div>
+                    <h3>Guided Mountain Hikes</h3>
+                    <p>Scenic trails with breathtaking viewpoints. Morning and sunset hikes available every weekend. Limited spots per hike.</p>
+                </div>
+            </div>
+            <div class="activity-card animate-on-scroll" style="transition-delay:0.2s;">
+                <img src="img/quadbike1.jpg" alt="Quad Biking">
+                <div class="activity-card-overlay">
+                    <div class="activity-card-icon">🏎️</div>
+                    <h3>Quad Biking</h3>
+                    <p>Thrill through rugged bushveld trails on powerful ATVs. Perfect for adrenaline seekers and adventure lovers.</p>
+                </div>
+            </div>
+            <div class="activity-card animate-on-scroll" style="transition-delay:0.3s;">
+                <img src="img/paintball2.jpg" alt="Paintball">
+                <div class="activity-card-overlay">
+                    <div class="activity-card-icon">🎯</div>
+                    <h3>Paintball & Shooting</h3>
+                    <p>Team-based paintball action and pellet gun shooting. Great for groups, team building, and competitive fun.</p>
+                </div>
+            </div>
+            <div class="activity-card animate-on-scroll" style="transition-delay:0.4s;">
+                <img src="img/fishing1.jpg" alt="Fishing at the Dam">
+                <div class="activity-card-overlay">
+                    <div class="activity-card-icon">🎣</div>
+                    <h3>Dam Fishing</h3>
+                    <p>Cast your line at the scenic Mumurwi dam. A peaceful pastime with stunning views and the chance to catch a trophy.</p>
+                </div>
+            </div>
+            <div class="activity-card animate-on-scroll" style="transition-delay:0.5s;">
+                <img src="img/braai1.jpg" alt="Picnic & Braai">
+                <div class="activity-card-overlay">
+                    <div class="activity-card-icon">🧺</div>
+                    <h3>Picnic & Braai Setups</h3>
+                    <p>Curated picnic experiences under the African sky. Family-friendly setups with braai facilities available on request.</p>
+                </div>
+            </div>
+            <div class="activity-card animate-on-scroll" style="transition-delay:0.6s;">
+                <img src="img/sanrock1.jpg" alt="Rock Art Tour">
+                <div class="activity-card-overlay">
+                    <div class="activity-card-icon">🏛️</div>
+                    <h3>San Rock Art Tours</h3>
+                    <p>Explore ancient San rock paintings hidden among the boulders. A fascinating journey into Zimbabwe's cultural heritage.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Accommodation Section -->
+    <section class="accommodation-section section-padding" id="accommodation">
+        <div class="accom-grid">
+            <div class="animate-on-scroll from-left">
+                <span style="color:var(--orange-primary); font-weight:600; font-size:0.85rem; letter-spacing:2px; text-transform:uppercase;">Your Stay</span>
+                <h2 class="section-title" style="color:white; margin-top:12px;">Rustic Outside,<br>Comfortable Inside</h2>
+                <div class="section-divider"></div>
+                <p style="color:rgba(255,255,255,0.75); line-height:1.8; margin-bottom:20px;">
+                    Our traditional thatched safari-style huts blend seamlessly into the landscape while offering all the modern comforts you need for a restful stay.
+                </p>
+                <p style="color:rgba(255,255,255,0.75); line-height:1.8; margin-bottom:30px;">
+                    Wake up to the sounds of the bush, breathe in the fresh mountain air, and enjoy the simple luxury of being surrounded by nature.
+                </p>
+                <div class="accom-features">
+                    <div class="accom-feature">
+                        <div class="accom-feature-icon">🛏️</div>
+                        <div>
+                            <span style="color:white; font-weight:600; font-size:0.9rem;">Comfortable Beds</span>
+                            <p style="color:rgba(255,255,255,0.5); font-size:0.8rem; margin-top:2px;">Quality linen & bedding</p>
+                        </div>
+                    </div>
+                    <div class="accom-feature">
+                        <div class="accom-feature-icon">🚿</div>
+                        <div>
+                            <span style="color:white; font-weight:600; font-size:0.9rem;">Private Bathrooms</span>
+                            <p style="color:rgba(255,255,255,0.5); font-size:0.8rem; margin-top:2px;">Hot water available</p>
+                        </div>
+                    </div>
+                    <div class="accom-feature">
+                        <div class="accom-feature-icon">🌿</div>
+                        <div>
+                            <span style="color:white; font-weight:600; font-size:0.9rem;">Scenic Views</span>
+                            <p style="color:rgba(255,255,255,0.5); font-size:0.8rem; margin-top:2px;">Mountain & dam vistas</p>
+                        </div>
+                    </div>
+                    <div class="accom-feature">
+                        <div class="accom-feature-icon">🔥</div>
+                        <div>
+                            <span style="color:white; font-weight:600; font-size:0.9rem;">Braai Facilities</span>
+                            <p style="color:rgba(255,255,255,0.5); font-size:0.8rem; margin-top:2px;">Outdoor cooking area</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="animate-on-scroll from-right">
+                <div class="accom-image-wrapper">
+                    <div class="accom-carousel" id="accomCarousel">
+                        <img src="img/acc1.jpg" alt="Safari Lodge Accommodation 1" class="accom-carousel-slide active">
+                        <img src="img/acc2.jpg" alt="Safari Lodge Accommodation 2" class="accom-carousel-slide">
+                        <img src="img/acc3.jpg" alt="Safari Lodge Accommodation 3" class="accom-carousel-slide">
+                    </div>
+                    <button class="accom-carousel-btn prev" onclick="moveCarousel(-1)">&#10094;</button>
+                    <button class="accom-carousel-btn next" onclick="moveCarousel(1)">&#10095;</button>
+                    <div class="accom-carousel-dots">
+                        <span class="dot active" onclick="goToSlide(0)"></span>
+                        <span class="dot" onclick="goToSlide(1)"></span>
+                        <span class="dot" onclick="goToSlide(2)"></span>
+                    </div>
+                </div>
+            </div>
+            <script>
+                (function() {
+                    let currentSlide = 0;
+                    const slides = document.querySelectorAll('.accom-carousel-slide');
+                    const dots = document.querySelectorAll('.accom-carousel-dots .dot');
+                    
+                    window.moveCarousel = function(direction) {
+                        slides[currentSlide].classList.remove('active');
+                        dots[currentSlide].classList.remove('active');
+                        
+                        currentSlide += direction;
+                        
+                        if (currentSlide >= slides.length) {
+                            currentSlide = 0;
+                        } else if (currentSlide < 0) {
+                            currentSlide = slides.length - 1;
+                        }
+                        
+                        slides[currentSlide].classList.add('active');
+                        dots[currentSlide].classList.add('active');
+                    };
+                    
+                    window.goToSlide = function(index) {
+                        slides[currentSlide].classList.remove('active');
+                        dots[currentSlide].classList.remove('active');
+                        
+                        currentSlide = index;
+                        
+                        slides[currentSlide].classList.add('active');
+                        dots[currentSlide].classList.add('active');
+                    };
+                    
+                    setInterval(() => {
+                        window.moveCarousel(1);
+                    }, 5000);
+                })();
+            </script>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="section-padding" id="highlights" style="background:var(--warm-white);">
+        <div style="text-align:center; margin-bottom:60px;">
+            <span style="color:var(--orange-primary); font-weight:600; font-size:0.85rem; letter-spacing:2px; text-transform:uppercase;">Why Choose Us</span>
+            <h2 class="section-title" style="margin-top:12px;">The Lion's Head Difference</h2>
+            <div class="section-divider" style="margin:20px auto;"></div>
+        </div>
+        <div class="highlights-grid">
+            <div class="highlight-card animate-on-scroll" style="transition-delay:0.1s;">
+                <div class="highlight-icon">📍</div>
+                <h3>Only ~1 Hour from Harare</h3>
+                <p>An easy drive along Shamva Road makes this the perfect weekend escape without the long journey.</p>
+            </div>
+            <div class="highlight-card animate-on-scroll" style="transition-delay:0.2s;">
+                <div class="highlight-icon">📸</div>
+                <h3>Stunning Viewpoints</h3>
+                <p>Photography-perfect spots with panoramic views of the dam, mountains, and endless bushveld.</p>
+            </div>
+            <div class="highlight-card animate-on-scroll" style="transition-delay:0.3s;">
+                <div class="highlight-icon">👨‍👩‍👧‍👦</div>
+                <h3>Family-Friendly</h3>
+                <p>Activities for all ages, safe environments, and curated experiences for families and groups.</p>
+            </div>
+            <div class="highlight-card animate-on-scroll" style="transition-delay:0.4s;">
+                <div class="highlight-icon">💰</div>
+                <h3>Affordable Adventures</h3>
+                <p>Premium experiences at accessible prices. Quality doesn't have to come at a premium cost.</p>
+            </div>
+            <div class="highlight-card animate-on-scroll" style="transition-delay:0.5s;">
+                <div class="highlight-icon">🌍</div>
+                <h3>Authentic Zimbabwean</h3>
+                <p>Immerse yourself in genuine local culture, heritage, and the untamed beauty of Zimbabwe.</p>
+            </div>
+            <div class="highlight-card animate-on-scroll" style="transition-delay:0.6s;">
+                <div class="highlight-icon">🏔️</div>
+                <h3>Unique Landscapes</h3>
+                <p>Lion's Head mountain, ancient rock formations, and a scenic dam create an unforgettable setting.</p>
+            </div>
+            <div class="highlight-card animate-on-scroll" style="transition-delay:0.7s;">
+                <div class="highlight-icon">🎨</div>
+                <h3>Cultural Heritage</h3>
+                <p>Discover ancient San rock art and learn about the rich history of the Mashonaland region.</p>
+            </div>
+            <div class="highlight-card animate-on-scroll" style="transition-delay:0.8s;">
+                <div class="highlight-icon">🤝</div>
+                <h3>Group Bookings</h3>
+                <p>Corporate retreats, team building, school groups, and large family gatherings welcome.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weekend Offers Section -->
+    <section class="offers-section section-padding" id="offers">
+        <div style="text-align:center; margin-bottom:60px;">
+            <span style="color:var(--orange-primary); font-weight:600; font-size:0.85rem; letter-spacing:2px; text-transform:uppercase;">Weekend Packages</span>
+            <h2 class="section-title" style="margin-top:12px;">Unforgettable Experiences</h2>
+            <div class="section-divider" style="margin:20px auto;"></div>
+            <p class="section-subtitle" style="margin:0 auto;">Choose your perfect weekend getaway. Every package is designed to create lasting memories.</p>
+        </div>
+        <div class="offers-grid">
+            <div class="offer-card animate-on-scroll" style="transition-delay:0.1s;">
+                <div class="offer-image">
+                    <img src="https://image.qwenlm.ai/public_source/e8238fe2-42c8-42d4-871c-18adfd888b13/1255f6855-3624-4acb-a471-b8a15a38db6e.png" alt="Weekend Hikes">
+                </div>
+                <div class="offer-content">
+                    <span style="color:var(--olive); font-weight:600; font-size:0.85rem; text-transform:uppercase; letter-spacing:1px;">Every Weekend</span>
+                    <h3 style="font-family:'Playfair Display',serif; font-size:1.5rem; margin:8px 0;">Weekend Hikes</h3>
+                    <div class="offer-price">$8 <span>per person</span></div>
+                    <ul class="offer-features">
+                        <li>Guided group hikes</li>
+                        <li>Scenic mountain trails</li>
+                        <li>Amazing viewpoints</li>
+                        <li>Perfect photo moments</li>
+                        <li>Morning & sunset options</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary" style="width:100%; text-align:center; padding:14px;">Book This Hike</a>
+                </div>
+            </div>
+            <div class="offer-card featured animate-on-scroll" style="transition-delay:0.2s;">
+                <div class="offer-badge">Most Popular</div>
+                <div class="offer-image">
+                    <img src="https://image.qwenlm.ai/public_source/e8238fe2-42c8-42d4-871c-18adfd888b13/16fc05536-45f1-4cf2-be18-459275e40e30.png" alt="Family Fun Weekend">
+                </div>
+                <div class="offer-content">
+                    <span style="color:var(--orange-primary); font-weight:600; font-size:0.85rem; text-transform:uppercase; letter-spacing:1px;">Best Value</span>
+                    <h3 style="font-family:'Playfair Display',serif; font-size:1.5rem; margin:8px 0;">Family Fun Weekend</h3>
+                    <div class="offer-price">$5 <span>entrance per person</span></div>
+                    <ul class="offer-features">
+                        <li>Quad biking access</li>
+                        <li>Paintball & pellet shooting</li>
+                        <li>Picnic setups on request</li>
+                        <li>Nature walks included</li>
+                        <li>Braai facilities available</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary" style="width:100%; text-align:center; padding:14px;">Book Your Slot</a>
+                </div>
+            </div>
+            <div class="offer-card animate-on-scroll" style="transition-delay:0.3s;">
+                <div class="offer-image">
+                    <img src="https://image.qwenlm.ai/public_source/e8238fe2-42c8-42d4-871c-18adfd888b13/10d5c59d7-c426-4299-a27f-4711f64c837c.png" alt="Group Adventure">
+                </div>
+                <div class="offer-content">
+                    <span style="color:var(--olive); font-weight:600; font-size:0.85rem; text-transform:uppercase; letter-spacing:1px;">Groups Welcome</span>
+                    <h3 style="font-family:'Playfair Display',serif; font-size:1.5rem; margin:8px 0;">Group Adventure</h3>
+                    <div class="offer-price">Custom <span>pricing</span></div>
+                    <ul class="offer-features">
+                        <li>Team building activities</li>
+                        <li>Corporate retreat packages</li>
+                        <li>Private event setups</li>
+                        <li>Customized itineraries</li>
+                        <li>Accommodation included</li>
+                    </ul>
+                    <a href="#contact" class="btn-dark" style="width:100%; text-align:center; padding:14px;">Enquire Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section-padding" id="gallery" style="background:var(--charcoal);">
+        <div class="parallax-bg" style="background-image: url('img/herobackground.jpg'); opacity:0.15;"></div>
+        <div style="position:relative; z-index:1;">
+        <div style="text-align:center; margin-bottom:60px;">
+            <span style="color:var(--orange-primary); font-weight:600; font-size:0.85rem; letter-spacing:2px; text-transform:uppercase;">Gallery</span>
+            <h2 class="section-title" style="margin-top:12px; color:white;">Moments at Lion's Head</h2>
+            <div class="section-divider" style="margin:20px auto;"></div>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item animate-on-scroll scale-in" onclick="openLightbox(this)">
+                <img src="img/damview1.jpg" alt="Dam View 1">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-zoom-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                            <line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item animate-on-scroll scale-in" style="transition-delay:0.1s;" onclick="openLightbox(this)">
+                <img src="img/damview2.jpg" alt="Dam View 2">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-zoom-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                            <line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item animate-on-scroll scale-in" style="transition-delay:0.2s;" onclick="openLightbox(this)">
+                <img src="img/fishing1.jpg" alt="Fishing">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-zoom-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                            <line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item animate-on-scroll scale-in" style="transition-delay:0.3s;" onclick="openLightbox(this)">
+                <img src="img/braai1.jpg" alt="Braai">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-zoom-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                            <line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item animate-on-scroll scale-in" style="transition-delay:0.4s;" onclick="openLightbox(this)">
+                <img src="img/mountains1.jpg" alt="Mountains">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-zoom-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                            <line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+        <div class="parallax-bg" style="background-image: url('img/mountains1.jpg');"></div>
+        <div class="cta-overlay"></div>
+        <div class="cta-content animate-on-scroll">
+            <div class="cta-text-wrapper">
+                <h2 class="section-title" style="color:white; margin-bottom:16px;">Ready for Your Next Escape?</h2>
+                <p class="cta-subtitle">
+                    Gather the crew for the ultimate day out at Lion's Head Mumurwi Resort. Book now to secure your slot.
+                </p>
+            </div>
+            <div class="cta-buttons-wrapper">
+                <a href="tel:+263785589443" class="btn-primary"> Call to Book</a>
+                <a href="https://wa.me/263785589443" target="_blank" class="btn-primary" style="background:#25D366;"> WhatsApp</a>
+                <a href="mailto:lionsheadmumurwi@outlook.com" class="btn-secondary">️ Email Us</a>
+            </div>
+            <div class="contact-cards-grid">
+                <div class="contact-card">
+                    <p class="contact-card-title">Phone</p>
+                    <p class="contact-card-content">
+                        +263785 589 443<br>
+                        +263717 510 134<br>
+                        +263717 121 572
+                    </p>
+                </div>
+                <div class="contact-card">
+                    <p class="contact-card-title">Email</p>
+                    <p class="contact-card-content">lionsheadmumurwi@outlook.com</p>
+                </div>
+                <div class="contact-card">
+                    <p class="contact-card-title">Location</p>
+                    <p class="contact-card-content">
+                        Office 3, Finsure Hse,<br>
+                        Cnr Second & Kwame<br>
+                        Shamva Road, ~62km from Harare
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div>
+                <a href="#" class="nav-logo" style="margin-bottom:20px; display:inline-flex;">
+                    <img src="img/logo.png" alt="Lion's Head Mumurwi Resort Logo" style="width:44px; height:44px;">
+                    <div>
+                        <span style="font-size:0.75rem; letter-spacing:2px; text-transform:uppercase; font-weight:600; color:white;">Lion's Head</span>
+                        <span style="display:block; font-size:1.1rem; font-family:'Playfair Display',serif; font-weight:700; color:white;">Mumurwi</span>
+                    </div>
+                </a>
+                <p style="margin-top:16px;">
+                    A scenic nature escape just 62km from Harare. Where the mountain meets the dam, and adventure meets serenity.
+                </p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                    <a href="#" aria-label="WhatsApp">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+                    </a>
+                    <a href="#" aria-label="TikTok">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15.2a6.34 6.34 0 0 0 10.86 4.46V13a8.28 8.28 0 0 0 5.58 2.15V11.7a4.84 4.84 0 0 1-3.58-1.63V6.69h3.58z"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#activities">Activities</a></li>
+                    <li><a href="#accommodation">Accommodation</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#offers">Weekend Offers</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Activities</h4>
+                <ul class="footer-links">
+                    <li><a href="#activities">Mountain Hiking</a></li>
+                    <li><a href="#activities">Quad Biking</a></li>
+                    <li><a href="#activities">Paintball</a></li>
+                    <li><a href="#activities">Fishing</a></li>
+                    <li><a href="#activities">Picnic & Braai</a></li>
+                    <li><a href="#activities">Rock Art Tours</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Getting Here</h4>
+                <p style="margin-bottom:16px;">
+                    Located approximately 62km from Harare along Shamva Road, in the Shamva District of Mashonaland Central, Zimbabwe.
+                </p>
+                <p style="margin-bottom:12px;">
+                    <strong style="color:white;">Office:</strong><br>
+                    Office 3, Finsure House,<br>
+                    Corner Second & Kwame
+                </p>
+                <p>
+                    <strong style="color:white;">Resort:</strong><br>
+                    Shamva Road, ~62km from Harare
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Lion's Head Mumurwi Resort. All rights reserved.</p>
+            <p>Shamva District, Mashonaland Central, Zimbabwe</p>
+        </div>
+    </footer>
+
+    <!-- Floating CTA -->
+    <div class="floating-cta" id="floatingCta" style="opacity:0; transition:opacity 0.3s ease; pointer-events:none;">
+        <a href="#contact" title="Book Now">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+        </a>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <button class="lightbox-close" aria-label="Close lightbox">✕</button>
+        <img src="" alt="Gallery Image" id="lightboxImg">
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
